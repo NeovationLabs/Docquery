@@ -1,0 +1,18 @@
+# Virtual Environment (This is what is freezing Git)
+.venv/
+venv/
+ENV/
+
+# Local LLM Models (Prevents committing the multi-gigabyte Llama model)
+*.gguf
+
+# Local Vector Databases & Storage
+storage/chroma/
+
+# User Uploaded Documents
+storage/uploads/*
+!storage/uploads/.gitkeep
+
+# Python bytecode
+__pycache__/
+*.pyc
